@@ -1,0 +1,41 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Profession</th>
+            <th>Age</th>
+            <th>Post Code</th>
+            <th>Father Origin</th>
+            <th>Facebook Name</th>
+            <th>Facebook Link</th>
+            <th>Instagram Name</th>
+            <th>Instagram Link</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.firstName}}</td>
+            <td>{{this.Surname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.gender}}</td>
+            <td>{{this.profession}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.postcode}}</td>
+            <td>{{this.fatherorigin}}</td>
+            <td>{{this.facebookname}}</td>
+            <td>{{this.facebooklink}}</td>
+            <td>{{this.instagramname}}</td>
+            <td>{{this.instagramlink}}</td>
+            <td>
+                <a><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
