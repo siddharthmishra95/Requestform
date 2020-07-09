@@ -84,10 +84,40 @@ function handleValidationError(err, body) {
     for (field in err.errors) {
         switch (err.errors[field].path) {
             case 'firstName':
-                body['fullNameError'] = err.errors[field].message;
+                body['firstNameError'] = err.errors[field].message;
+                break;
+            case 'Surname':
+                body['SurnameError'] = err.errors[field].message;
                 break;
             case 'email':
                 body['emailError'] = err.errors[field].message;
+                break;
+            case 'gender':
+                body['genderError']= err.errors[field].message;
+                break;
+            case 'profession':
+                body['professionError'] = err.errors[field].message;
+                break;
+            case 'age':
+                body['ageError'] = err.errors[field].message;
+                break;
+            case 'postcode':
+                body['postcodeError'] = err.errors[field].message;
+                break;
+            case 'fatherorigin':
+                body['fatheroriginError'] = err.errors[field].message;
+                break;
+            case 'facebookname':
+                body['facebooknameError'] = err.errors[field].message;
+                break;
+            case 'facebooklink':
+                body['facebooklinkError'] = err.errors[field].message;
+                break;
+            case 'instagramname':
+                body['instagramnameError'] = err.errors[field].message;
+                break;
+            case 'instagramlink':
+                body['instagramlinkError'] =err.errors[field].message;
                 break;
             default:
                 break;

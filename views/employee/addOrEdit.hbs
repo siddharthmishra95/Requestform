@@ -12,7 +12,8 @@
         <div class="form-group col-md-6">
             <label>Surname</label>
             <input type="text" class="form-control" name="Surname" placeholder="Surname" value="{{employee.Surname}}">
-            
+            <div class="text-danger">
+                {{employee.SurnameError}}</div>
         </div>
    </div>  
     <div class="form-group">
@@ -24,47 +25,61 @@
     <div class="form-group">
         <label>Gender</label>
         <input type="text" class="form-control" name="gender" placeholder="Gender" value="{{employee.gender}}">
-        
+        <div class="text-danger">
+            {{employee.genderError}}</div>
     </div>
     <div class="form-group">
         <label>Profession</label>
         <input type="text" class="form-control" name="profession" placeholder="Professsion" value="{{employee.profession}}">
-        
+        <div class="text-danger">
+            {{employee.professionError}}</div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Age</label>
             <input type="text" class="form-control" name="age" placeholder="Age" value="{{employee.age}}">
-        
+             <div class="text-danger">
+            {{employee.ageError}}</div>
         </div>
         <div class="form-group col-md-6">
             <label>Post Code</label>
             <input type="text" class="form-control" name="postcode" placeholder="Post Code" value="{{employee.postcode}}">
+            <div class="text-danger">
+            {{employee.postcodeError}}</div>
         </div>
     </div>
     <div class="form-group">
         <label>Father's Origin</label>
         <input type="text" class="form-control" name="fatherorigin" placeholder="Father's Origin" value="{{employee.fatherorigin}}">
-        
+        <div class="text-danger">
+            {{employee.fatheroriginError}}</div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Facebook Name</label>
             <input type="text" class="form-control" name="facebookname" placeholder="Facebook Name" value="{{employee.facebookname}}">
+            <div class="text-danger">
+            {{employee.facebooknameError}}</div>
         </div>
         <div class="form-group col-md-6">
             <label>Facebook Link</label>
             <input type="text" class="form-control" name="facebooklink" placeholder="Facebook Link" value="{{employee.facebooklink}}">
+            <div class="text-danger">
+            {{employee.facebooklinkError}}</div>
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Instagram Name</label>
             <input type="text" class="form-control" name="instagramname" placeholder="Instagram Name" value="{{employee.instagramname}}">
+            <div class="text-danger">
+            {{employee.instagramnameError}}</div>
         </div>
         <div class="form-group col-md-6">
             <label>Instagram Link</label>
             <input type="text" class="form-control" name="instagramlink" placeholder="Instagram Link" value="{{employee.instagramlink}}">
+            <div class="text-danger">
+            {{employee.instagramlinkError}}</div>
         </div>
     </div>
     <div class="form-group">

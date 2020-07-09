@@ -7,29 +7,48 @@ var employeeSchema = new mongoose.Schema({
     },
     Surname:{
         type:String,
+        required: 'This field is required.'
     },
     email: {
-        type: String
+        type: String,
+        required: 'This field is required.'
     },
     gender: {
-        type:String
+        type:String,
+        required: 'This field is required.'
     },
     profession:{
-        type:String
+        type:String,
+        required: 'This field is required.'
     },
     age:{
-        type:String
+        type:String,
+        required: 'This field is required.'
     },
     postcode:{
-        type:String
+        type:String,
+        required: 'This field is required.'
     },
     fatherorigin:{
-        type:String
+        type:String,
+        required: 'This field is required.'
     },
-    facebookname:{type:String},
-    facebooklink:{type:String},
-    instagramname:{type:String},
-    instagramlink:{type:String},
+    facebookname:{
+        type:String,
+        required: 'This field is required.'
+    },
+    facebooklink:{
+        type:String,
+        required: 'This field is required.'
+    },
+    instagramname:{
+        type:String,
+        required: 'This field is required.'
+    },
+    instagramlink:{
+        type:String,
+        required: 'This field is required.'
+    },
 
 });
 
